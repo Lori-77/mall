@@ -1,2 +1,2 @@
-# mall.io
+# mall
 web框架作业
