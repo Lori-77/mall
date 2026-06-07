@@ -1,0 +1,53 @@
+/* ===== CSS Reset ===== */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Microsoft YaHei", Arial, sans-serif;
+  color: #333;
+  background: #f3f3f3;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* ===== 全局变量 ===== */
+:root {
+  --primary: #409eff;
+  --success: #67c23a;
+  --danger: #e4393c;
+  --dark: #222;
+  --white: #fff;
+  --border: #e5e5e5;
+}
+
+/* ===== 布局工具类 ===== */
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Flex 网格（商品卡片等） */
+.flex-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+}
