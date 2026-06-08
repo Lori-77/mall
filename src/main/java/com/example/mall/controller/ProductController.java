@@ -33,7 +33,7 @@ public class ProductController {
         return Result.success(productRepository.findAll());
     }
 
-    // 查单个
+    // 查单个商品
     @GetMapping("/{id}")
     public Result<Product> getById(@PathVariable Integer id) {
         return productRepository.findById(id)

@@ -17,7 +17,7 @@ public class Order {
 
     private String username;
 
-    // 把购物车的商品信息拼成字符串存起来，简单
+    // 把购物车的商品信息拼成字符串存起来
     @Column(length = 1000)
     private String items;
 

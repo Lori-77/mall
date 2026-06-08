@@ -20,7 +20,7 @@ public class DataInitializer implements CommandLineRunner {
 
     @Override
     public void run(String... args) {
-        // 修复老数据：status为null的改成1（上架）
+        // status为null的改成1（上架）
         productRepository.findAll().forEach(p -> {
             if (p.getStatus() == null) {
                 p.setStatus(1);

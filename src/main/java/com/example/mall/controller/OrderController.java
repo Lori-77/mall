@@ -27,7 +27,7 @@ public class OrderController {
         return Result.success(order);
     }
 
-    // 查某用户的订单
+    // 查看用户的订单
     @GetMapping
     public Result<List<Order>> list(@RequestParam Integer userId) {
         return Result.success(orderRepository.findByUserIdOrderByCreateTimeDesc(userId));
